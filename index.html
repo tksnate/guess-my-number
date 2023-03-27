@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" constent="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number</title>
+    <title>Guess The Number</title>
   </head>
+
   <body>
     <header>
-      <h1>Guess My Number</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
+      <div
+        class="card text-white bg-primary bg-gradient text-center mb-3"
+        style="width: 100%"
+      >
+        <div class="card-body">
+          <h1 class="card-title text-warning">Guess The Number</h1>
+          <h5 class="card-text">The secret number is between 1-20.</h5>
+          <p class="card-text">
+            The goal is to guess the secret number correctly in as few tries as
+            possible. Try to get the High Score!
+          </p>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Enter your guess and press "Check!"</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="number">?</div>
+          </div>
+        </div>
+
+        <!-- <h2>Guess My Number</h2>
+      <p class="between">(Between 1 and 20)</p> -->
+        <!-- <button class="btn again">Again!</button> -->
+
+        <section class="left">
+          <input type="number" class="guess" />
+          <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+          <p class="message">Enter your guess and press "Check!"</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </div>
     </main>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
     <script src="script.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

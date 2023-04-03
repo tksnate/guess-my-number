@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 let score = 0;
 let highScore = 20;
@@ -40,6 +40,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   score = 0;
+  document.querySelector('.app').style.opacity = 100;
   document.querySelector('.score').textContent = 0;
   document.body.style.background = 'black';
   document.querySelector('.number').textContent = '?';

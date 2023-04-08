@@ -31,9 +31,8 @@
           possible!
         </p>
       </div>
-      <button
-        class="again text-center border border-light border-5 bg-warning mb-2"
-      >
+
+      <button type="button" class="btn btn-warning again text-center mb-2">
         START NEW GAME
       </button>
     </div>
@@ -41,7 +40,11 @@
       <div class="container">
         <div class="row pt-5 pb-4">
           <!-- <div class="col align-self-center number bg-warning text-light"> -->
-          <div class="col text-center number bg-warning text-light">?</div>
+          <div
+            class="col text-center number bg-primary text-light rounded-circle"
+          >
+            ?
+          </div>
         </div>
 
         <div class="row justify-content-center">
@@ -50,10 +53,10 @@
               Enter your guess and press "CHECK"!
             </h4>
           </div>
-          <div class="col text-center">
+          <div class="col text-center mt-1">
             <input type="number" class="guess" placeholder="YOUR GUESS" />
           </div>
-          <div class="col text-center mt-2">
+          <div class="col text-center mt-1">
             <button class="btn check">CHECK</button>
           </div>
         </div>
@@ -68,6 +71,11 @@
             <p class="label-highscore text-warning">
               Best Round: <span class="highscore">10</span>
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center mb-4 mt-4 fs-5 text-primary">
+            THANK YOU FOR PLAYING
           </div>
         </div>
       </div>
